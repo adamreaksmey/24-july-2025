@@ -1,4 +1,4 @@
-# 27-jul-2025 — Cambodia's Voice in the Digital Battlefield
+# 24-jul-2025 — Cambodia's Voice in the Digital Battlefield
 
 > _On July 24th, 2025 at 8:30AM, Thailand fired the first shot — and ignited a war._
 
