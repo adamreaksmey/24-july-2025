@@ -28,7 +28,7 @@ From the veterans of the Pol Pot era to the digital defenders of today, **we sto
 Thailand may have superior jets and tanks.  
 But we have something stronger: **our unity, our history, and our fire**.
 
-> "They bombed us at 4AM. One of our men lit a cigarette, grabbed his RPG, and walked out shirtless to defend his land."
+> "They bombed us at 4AM. One of our men lit a cigarette, grabbed his RPG and Rifles, and walked out shirtless to defend his land."
 
 ---
 
