@@ -3,15 +3,17 @@
 import React from "react";
 
 import { MainCarousel } from "../reusable/MainCarousel";
+import { carouselImages } from "@/assets/images/carouselImages";
 
 export const LandingPage = () => {
+  const mappedImages = structuredClone(carouselImages);
 
   return (
     <div className="flex justify-center w-full">
       <MainCarousel
-        carouselItems={[1, 2, 3, 4, 5].map((indexSample) => ({
-          image: "",
-          title: indexSample.toString(),
+        carouselItems={mappedImages.map((data) => ({
+          image: data.image,
+          title: data.title,
         }))}
       />
     </div>
