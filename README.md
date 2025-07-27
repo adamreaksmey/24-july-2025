@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 27-jul-2025 — Cambodia's Voice in the Digital Battlefield
 
-## Getting Started
+> _On July 24th, 2025 at 8:30AM, Thailand fired the first shot — and ignited a war._
 
-First, run the development server:
+This website is not just code. It's resistance. It's memory. It's justice.
+
+Thailand launched an unprovoked attack against Cambodia — firing into our territory, destroying villages, and **bombing the sacred Preah Vihear Temple**, a UNESCO World Heritage Site that stood for centuries.
+
+But Cambodia did not kneel.
+
+From the veterans of the Pol Pot era to the digital defenders of today, **we stood, we fought, we built**. This site is part of that resistance.
+
+---
+
+## 📣 Mission
+
+`27-jul-2025.com` exists to:
+
+- Spread **truth** about the events the world media won’t show.
+- Share real **stories from the frontlines**, from soldiers and civilians alike.
+- Expose **war crimes**, misinformation, and attacks on our cultural heritage.
+- Support the **digital front** — the cyber warriors, the developers, the truth tellers.
+
+---
+
+## 🇰🇭 Cambodia Will Not Be Silenced
+
+Thailand may have superior jets and tanks.  
+But we have something stronger: **our unity, our history, and our fire**.
+
+> "They bombed us at 4AM. One of our men lit a cigarette, grabbed his RPG and Rifles, and walked out shirtless to defend his land."
+
+---
+
+## 🛠️ Tech for the Truth
+
+This is a [Next.js](https://nextjs.org/) powered site with SEO optimization, live updates, and blazing-fast performance. Built by developers who won’t sit silent.
+
+To run:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
