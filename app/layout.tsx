@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "27/07/2025 — Cambodia Remembers",
+  title: "24/07/2025 — Cambodia Remembers",
   description:
-    "On July 27th, 2025, the world changed. Thailand fired the first shot. Cambodia responds with truth, resistance, and code.",
+    "On July 24th, 2025, the world changed. Thailand fired the first shot. Cambodia responds with truth, resistance, and code.",
   icons: {
     icon: "/favicon.ico",
   },
