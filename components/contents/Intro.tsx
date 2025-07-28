@@ -13,7 +13,7 @@ export const Intro = () => {
   return (
     <>
       <div className="text-center px-4 mt-4">
-        <h1 className="text-4xl font-bold text-red-600">WAR HAS BROKEN OUT</h1>
+        <h1 className="text-5xl font-bold text-red-600">WAR HAS BROKEN OUT</h1>
         <p className="mt-2 text-gray-800 max-w-2xl mx-auto">
           On July 24, 2025, Thailand launched an unprovoked attack that marked
           the beginning of a devastating conflict. We will not stay silent.

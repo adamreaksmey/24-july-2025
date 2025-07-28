@@ -2,10 +2,13 @@
 
 import React, { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import "yet-another-react-lightbox/styles.css";
@@ -26,6 +29,8 @@ export const MainCarousel = ({
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const autoPlayConfiguration = 5000;
+
   const handleImageClick = (index: number) => {
     setCurrentIndex(index);
     setOpen(true);
@@ -33,7 +38,14 @@ export const MainCarousel = ({
 
   return (
     <div className="w-full flex justify-center">
-      <Carousel className="w-[80%] h-[30vh]">
+      <Carousel
+        className="w-[80%] h-[30vh]"
+        plugins={[
+          Autoplay({
+            delay: autoPlayConfiguration,
+          }),
+        ]}
+      >
         <CarouselContent className="flex">
           {carouselItems.map((item, index) => (
             <CarouselItem
@@ -59,6 +71,8 @@ export const MainCarousel = ({
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
       </Carousel>
 
       <Lightbox
