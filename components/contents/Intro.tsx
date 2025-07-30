@@ -2,7 +2,7 @@ import React from "react";
 
 export const Intro = () => {
   const preInfo = {
-    civiliansAffected: 7500,
+    civiliansAffected: 10000,
     heritageSitesAffected: 1,
     daySinceConflict: Math.floor(
       (Date.now() - new Date("2025-07-24T08:30:00+07:00").getTime()) /
@@ -20,7 +20,7 @@ export const Intro = () => {
         </p>
       </div>
       <div className="bg-black text-white p-3 text-center text-sm font-mono">
-        Civilians affected & Displaced:{" "}
+        Civilians Affected & Displaced:{" "}
         <DataWrapper text={`+${preInfo.civiliansAffected} Families`} />{" "}|
         Heritage Sites Destroyed:{" "}
         <DataWrapper text={preInfo.heritageSitesAffected} /> | Days since

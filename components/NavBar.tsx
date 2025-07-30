@@ -40,7 +40,7 @@ export function NavigationMenuBar() {
               >
                 {link.title}
                 <span
-                  className={`pointer-events-none absolute left-[20%] bottom-1 h-[2px] w-[60%] origin-left scale-x-0 bg-primary ${
+                  className={`pointer-events-none fs-1 absolute left-[20%] bottom-1 h-[2px] w-[60%] origin-left scale-x-0 bg-primary ${
                     hoveredIndex === index
                       ? "transition-transform duration-300 group-hover:scale-x-100"
                       : ""

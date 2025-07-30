@@ -54,7 +54,7 @@ export const MainCarousel = ({
             >
               <Card className="w-full h-full cursor-pointer">
                 <CardContent
-                  className="flex flex-col items-center justify-center p-4 h-[30vh]"
+                  className="flex flex-col items-center justify-center p-4 h-[50vh]"
                   onClick={() => handleImageClick(index)}
                 >
                   <Image
@@ -62,7 +62,7 @@ export const MainCarousel = ({
                     alt={item.title}
                     width={800}
                     height={400}
-                    className="max-h-[25vh] object-contain mb-2 rounded"
+                    className="max-h-[50vh] object-contain mb-2 rounded"
                     style={{ width: "100%" }}
                   />
                   <span>{item.title}</span>
