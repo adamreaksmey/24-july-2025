@@ -1,5 +1,7 @@
 import FIRST_STRIKE from "./FIRST_STRIKE.png";
 import DISPLACEMENT from "./DISPLACEMENT.png"
+import HERITAGE_SITE_DESTROYED from "./HERITAGE_SITE_DESTROYED.png"
+import LOSS from "./LOSS.png"
 
 export const carouselImages = [
   {
@@ -10,6 +12,16 @@ export const carouselImages = [
   {
     image: DISPLACEMENT.src,
     title: "Displacement",
+    description: "Description"
+  },
+  {
+    image: HERITAGE_SITE_DESTROYED.src,
+    title: "UNESCO Heritage Site Destoryed - Preah Vihear",
+    description: "Description"
+  },
+  {
+    image: LOSS.src,
+    title: "Damaged Buildings, Dead Soldiers & Civilians",
     description: "Description"
   }
 ];
