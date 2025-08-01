@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "On July 24th, 2025, the world changed. Thailand fired the first shot. Cambodia responds with truth, resistance, and code.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon/Flag.png",
   },
 };
 

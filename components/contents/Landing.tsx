@@ -14,6 +14,7 @@ export const LandingPage = () => {
         carouselItems={mappedImages.map((data) => ({
           image: data.image,
           title: data.title,
+          description: data.description
         }))}
       />
     </div>

@@ -19,6 +19,7 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 type CarouselItems = {
   title: string;
   image: string;
+  description: string;
 };
 
 export const MainCarousel = ({
@@ -39,33 +40,36 @@ export const MainCarousel = ({
   return (
     <div className="w-full flex justify-center">
       <Carousel
-        className="w-[80%] h-[30vh]"
+        className="w-[90%] sm:w-[80%] h-[30vh] sm:h-[50vh]"
         plugins={[
           Autoplay({
             delay: autoPlayConfiguration,
           }),
         ]}
       >
-        <CarouselContent className="flex">
+        <CarouselContent>
           {carouselItems.map((item, index) => (
-            <CarouselItem
-              key={index}
-              className="basis-full flex justify-center"
-            >
-              <Card className="w-full h-full cursor-pointer">
+            <CarouselItem key={index} className="flex justify-center">
+              <Card className="w-full h-full cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300">
                 <CardContent
-                  className="flex flex-col items-center justify-center p-4 h-[50vh]"
+                  className="flex flex-col items-center justify-start p-3 sm:p-5 h-full"
                   onClick={() => handleImageClick(index)}
                 >
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={800}
-                    height={400}
-                    className="max-h-[50vh] object-contain mb-2 rounded"
-                    style={{ width: "100%" }}
-                  />
-                  <span>{item.title}</span>
+                  <div className="relative w-full aspect-[16/9] mb-3">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      className="object-contain rounded-md"
+                      sizes="(max-width: 768px) 100vw, 800px"
+                    />
+                  </div>
+                  <h3 className="text-base sm:text-lg font-semibold text-center mb-1">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-yellow-600 text-center">
+                    {item.description}
+                  </p>
                 </CardContent>
               </Card>
             </CarouselItem>
