@@ -40,7 +40,7 @@ export const MainCarousel = ({
   return (
     <div className="w-full flex justify-center">
       <Carousel
-        className="w-[90%] sm:w-[80%] h-3/4"
+        className="w-[90%] sm:w-[80%] h-4/4"
         plugins={[
           Autoplay({
             delay: autoPlayConfiguration,
@@ -50,13 +50,11 @@ export const MainCarousel = ({
         <CarouselContent>
           {carouselItems.map((item, index) => (
             <CarouselItem key={index} className="flex justify-center">
-              <Card className="w-full h-3/4 cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300">
-                <CardContent
-                  className="flex flex-col items-center justify-start p-3 sm:p-5 h-full"
-                  onClick={() => handleImageClick(index)}
-                >
+              <Card className="w-full h-4/5 cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="flex flex-col items-center justify-start p-3 sm:p-5 h-full">
                   <div className="w-full max-h-[80%] flex items-center justify-center mb-3">
                     <Image
+                      onClick={() => handleImageClick(index)}
                       src={item.image}
                       alt={item.title}
                       width={800}
