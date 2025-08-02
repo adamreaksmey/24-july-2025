@@ -63,7 +63,7 @@ body {
   color: var(--foreground);
   /* width: 65%; */
   /* margin: auto; */
-  height: 100vh;
+  /* height: 100vh; */
   /* Only use Oswald, fallback to sans-serif */
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
   font-optical-sizing: auto;
@@ -83,7 +83,7 @@ body {
     rgba(233, 228, 240, 0.8),
     rgba(211, 204, 227, 0.8)
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100vh;
+  /* height: 100vh; */
   box-shadow: -12px 0 24px -8px rgba(80, 60, 120, 0.18), 12px 0 24px -8px rgba(80, 60, 120, 0.18);
 }
 

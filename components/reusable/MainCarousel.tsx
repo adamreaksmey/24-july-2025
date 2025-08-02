@@ -30,7 +30,7 @@ export const MainCarousel = ({
   const [open, setOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const autoPlayConfiguration = 5000;
+  const autoPlayConfiguration = 10000;
 
   const handleImageClick = (index: number) => {
     setCurrentIndex(index);
@@ -40,7 +40,7 @@ export const MainCarousel = ({
   return (
     <div className="w-full flex justify-center">
       <Carousel
-        className="w-[90%] sm:w-[80%] h-[30vh] sm:h-[50vh]"
+        className="w-[90%] sm:w-[80%] h-3/4"
         plugins={[
           Autoplay({
             delay: autoPlayConfiguration,
@@ -50,33 +50,36 @@ export const MainCarousel = ({
         <CarouselContent>
           {carouselItems.map((item, index) => (
             <CarouselItem key={index} className="flex justify-center">
-              <Card className="w-full h-full cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300">
+              <Card className="w-full h-3/4 cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300">
                 <CardContent
                   className="flex flex-col items-center justify-start p-3 sm:p-5 h-full"
                   onClick={() => handleImageClick(index)}
                 >
-                  <div className="relative w-full aspect-[16/9] mb-3">
+                  <div className="w-full max-h-[80%] flex items-center justify-center mb-3">
                     <Image
                       src={item.image}
                       alt={item.title}
-                      fill
-                      className="object-contain rounded-md"
-                      sizes="(max-width: 768px) 100vw, 800px"
+                      width={800}
+                      height={450}
+                      className="w-full h-auto max-h-full object-contain rounded-md"
                     />
                   </div>
-                  <h3 className="text-base sm:text-lg font-semibold text-center mb-1">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs sm:text-sm text-yellow-600 text-center">
-                    {item.description}
-                  </p>
+
+                  <div className="w-full text-center px-2">
+                    <h3 className="text-base sm:text-lg font-semibold mb-1 truncate">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-yellow-600 line-clamp-3">
+                      {item.description}
+                    </p>
+                  </div>
                 </CardContent>
               </Card>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="scale-125 cursor-pointer" />
+        <CarouselNext className="scale-125 cursor-pointer" />
       </Carousel>
 
       <Lightbox

@@ -2,6 +2,7 @@
 
 import { Intro } from "@/components/contents/Intro";
 import { LandingPage } from "@/components/contents/Landing";
+import { Footer } from "@/components/footer/Footer";
 import { NavigationMenuBar } from "@/components/NavBar";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
       <Intro />
       <LandingPage />
+      <Footer />
     </div>
   );
 }
